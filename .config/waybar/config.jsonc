@@ -1,0 +1,28 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "custom/power"],
+    "hyprland/window": {
+    	"format": "{}",
+    	"icon": true,
+    	"seperate-outputs": true,
+        "max-length": 50
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10,
+        "icons": {
+            "blueman": "bluetooth"
+        }
+    },
+    "custom/power": {
+            "format" : "⏻ ",
+    		"tooltip": false,
+    		"on-click":"exec wlogout"
+        }
+}
